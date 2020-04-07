@@ -1,0 +1,26 @@
+[
+	{
+		"collection": "input_sensors",
+		"name": "LacI_sensor",
+		"input_molecule": "IPTG",
+		"type": "sequester_inhibitor"
+	},
+	{
+		"collection": "input_sensors",
+		"name": "TetR_sensor",
+		"input_molecule": "aTc",
+		"type": "sequester_inhibitor"
+	},
+	{
+		"collection": "input_sensors",
+		"name": "AraC_sensor",
+		"input_molecule": "Ara",
+		"type": "complex_stimulator"
+	},
+	{
+		"collection": "input_sensors",
+		"name": "LuxR_sensor",
+		"input_molecule": "HSL",
+		"type": "complex_stimulator"
+	}
+]
