@@ -39,9 +39,12 @@ for key in lib:
                 for coll in hint:
                     if ref_coll["collection"] == coll["collection"] and ref_coll["name"] == coll["name"]:
                         z = merge_coll(ref_coll, coll)
+                        hint.remove(coll)
+                        break
                 output.append(z)
+            output += hint
         else:
             output += segment
                     
-    with open(distdir + key + ".SBH.json", "w") as fp:
+    with open(distdir + key + ".SynBioHub.json", "w") as fp:
         json.dump(output, fp, indent=4)
